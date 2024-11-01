@@ -1,0 +1,49 @@
+│                                                                              │
+│   Storybook was successfully installed in your project! 🎉                   │
+│   To run Storybook manually, run npm run storybook. CTRL+C to stop.          │
+│                                                                              │
+│   Wanna know more about Storybook? Check out https://storybook.js.org/       │
+│   Having trouble or want to chat? Join us at https://discord.gg/storybook/   │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+│
+◆  Successfully setup add-ons
+│
+◇  Successfully installed dependencies
+│
+◇  Successfully formatted modified files
+│
+◇  Project next steps ─────────────────────────────────────────────────────╮
+│                                                                          │
+│  1: cd Ctf-platform                                                      │
+│  2: git init && git add -A && git commit -m "Initial commit" (optional)  │
+│  3: npm run dev -- --open                                                │
+│                                                                          │
+│  To close the dev server, hit Ctrl-C                                     │
+│                                                                          │
+│  Stuck? Visit us at https://svelte.dev/chat                              │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+│
+◇  Add-on next steps ──────────────────────────────────────────────────╮
+│                                                                      │
+│  drizzle:                                                            │
+│  - You will need to set DATABASE_URL in your production environment  │
+│  - Run npm run db:start to start the docker container                │
+│  - Run npm run db:push to update your database schema                │
+│                                                                      │
+│  lucia:                                                              │
+│  - Run npm run db:push to update your database schema                │
+│  - Visit /demo/lucia route to view the demo                          │
+│                                                                      │
+│  paraglide:                                                          │
+│  - Edit your messages in messages/en.json                            │
+│  - Consider installing the Sherlock IDE Extension                    │
+│  - Visit /demo/paraglide route to view the demo                      │
+│                                                                                                                            │
+│   Storybook was successfully installed in your project! 🎉                   │
+│   To run Storybook manually, run npm run storybook. CTRL+C to stop.          │
+│                                                                              │
+│   Wanna know more about Storybook? Check out https://storybook.js.org/       │
+│   Having trouble or want to chat? Join us at https://discord.gg/storybook/   │
+│                                            
