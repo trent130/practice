@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { userTotalScore } from '../stores/scoring';
-    import { user } from '../stores/user';
+    import { userTotalScore } from '../stores/scoring.js';
+    import { user } from '../stores/user.js';
   
     export let showRank = true;
   </script>

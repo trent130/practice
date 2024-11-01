@@ -6,6 +6,12 @@
     const categories = ["All", "Web", "Crypto", "Reverse Engineering", "Forensics", "PWN", "OSINT"];
     let selectedCategory = "All";
     let searchQuery = "";
+    
+    interface CategoryFilterProps {
+      categories: string[];
+      selected: string;
+      class?: string;
+    }
   
     const challenges = [
       {
@@ -97,7 +103,7 @@
     <CategoryFilter
       {categories}
       bind:selected={selectedCategory}
-      class="mb-8"
+      
     />
   
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

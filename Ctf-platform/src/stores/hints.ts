@@ -1,5 +1,5 @@
-import { writable } from 'svelte/store';
-import { notifications } from './notifications';
+import { get, writable } from 'svelte/store';
+import { notifications } from './notifications.js';
 
 export interface Hint {
   id: number;
@@ -39,7 +39,7 @@ function createHintStore() {
     },
     getUnlockedHints: (challengeId: number) => {
       const store = get(hints);
-      return (store[challengeId] || []).filter(hint => hint.unlocked);
+      return (store[challengeId] || []).filter((hint: { unlocked: any; }) => hint.unlocked);
     }
   };
 }

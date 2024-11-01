@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { user, type UserSettings } from '../stores/user';
-    import { notifications } from '../stores/notifications';
+    import { user, type UserSettings } from '../stores/user.js';
+    import { notifications } from '../stores/notifications.js';
   
     let settings: UserSettings;
     $: settings = $user?.settings || {

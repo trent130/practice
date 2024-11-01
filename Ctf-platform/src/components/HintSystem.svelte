@@ -1,8 +1,8 @@
 <script lang="ts">
-    import { hints, type Hint } from '../stores/hints';
-    import { scoring } from '../stores/scoring';
-    import { notifications } from '../stores/notifications';
-    import { user } from '../stores/user';
+    import { hints, type Hint } from '../stores/hints.js';
+    import { scoring } from '../stores/scoring.js';
+    import { notifications } from '../stores/notifications.js';
+    import { user } from '../stores/user.js';
   
     export let challengeId: number;
     

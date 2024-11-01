@@ -1,5 +1,5 @@
 import { writable, derived } from 'svelte/store';
-import { user } from './user';
+import { user } from './user.js';
 
 export interface Score {
   challengeId: number;

@@ -1,9 +1,9 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import { hints } from '../stores/hints';
-    import { scoring } from '../stores/scoring';
-    import { notifications } from '../stores/notifications';
-    import { user } from '../stores/user';
+    import { hints } from '../stores/hints.js';
+    import { scoring } from '../stores/scoring.js';
+    import { notifications } from '../stores/notifications.js';
+    import { user } from '../stores/user.js';
     import HintSystem from '../components/HintSystem.svelte';
     import ScoreDisplay from '../components/ScoreDisplay.svelte';
     
@@ -162,11 +162,12 @@
                 class="flex items-center gap-2 text-blue-400 hover:text-blue-300"
                 download
               >
+              
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width={2}
                     d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
                   />
                 </svg>
@@ -183,7 +184,7 @@
               <input
                 type="text"
                 bind:value={flagInput}
-                placeholder="Enter flag (format: ctf{flag})"
+                placeholder="Enter flag (format: ctf{challenge.flag})"
                 class="w-full p-3 bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>

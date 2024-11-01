@@ -102,10 +102,10 @@
                   ></div>
                 </div>
               </div>
-              {#if achievement.completed}
-                <p class="text-sm text-gray-400 mt-4">
-                  Unlocked on {new Date(achievement.unlockedAt).toLocaleDateString()}
-                </p>
+              {#if achievement.completed && achievement.unlockedAt}
+                  <p class="text-sm text-gray-400 mt-4">
+                    Unlocked on {new Date(achievement.unlockedAt ?? '').toLocaleDateString()}
+                  </p>
               {/if}
             </div>
           </div>

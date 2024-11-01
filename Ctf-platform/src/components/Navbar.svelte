@@ -1,6 +1,6 @@
 <script lang="ts">
     import { Link } from "svelte-routing";
-    import { user } from '../stores/user';
+    import { user } from '../stores/user.js';
   
     let showMobileMenu = false;
     let showUserMenu = false;
@@ -16,15 +16,16 @@
         </div>
   
         <!-- Mobile menu button -->
+        <!-- svelte-ignore a11y_consider_explicit_label -->
         <button
           class="md:hidden p-2"
           on:click={() => showMobileMenu = !showMobileMenu}
         >
           <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width={2}
               d={showMobileMenu ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
             />
           </svg>
@@ -45,14 +46,15 @@
                 <span>{$user?.username}</span>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width={2}
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
               </button>
               {#if showUserMenu}
+                <!-- svelte-ignore a11y_no_static_element_interactions -->
                 <div
                   class="absolute right-0 mt-2 w-48 bg-gray-700 rounded-lg shadow-lg py-2"
                   on:mouseleave={() => showUserMenu = false}

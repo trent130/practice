@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { notifications, type Notification } from '../stores/notifications';
+    import { notifications, type Notification } from '../stores/notifications.js';
     import { fly } from 'svelte/transition';
   
     $: sortedNotifications = $notifications.sort((a, b) => b.timestamp - a.timestamp);
